@@ -1,0 +1,62 @@
+/* Favorites Section Heading */
+.favorites-heading {
+  text-align: center;
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Movies Grid for Favorites */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .movies-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Styling the "empty favorites" view */
+.favorites-empty {
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  max-width: 600px;
+  color: #ccc;
+}
+
+.favorites-empty h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.favorites-empty p {
+  font-size: 1rem;
+}
